@@ -28,8 +28,13 @@ console.log('\n........');
 fruits2.forEach(elem => console.log(elem) );                    // prints Dates PineApple Coconut
 
 
+// B. Multi type array declaration style
+const mArr1 : (string | number) [] = [1, 'soildier', 'hype'];
+const mArr2 : Array<string | number> = ['luck', 100];
 
+console.log(mArr1);                     // prints [ 1, 'soildier', 'hype' ]
+console.log(mArr2);                     // prints [ 'luck', 100 ]
 
-
-
+console.log(mArr1[2]);              // prints hype
+console.log(mArr1[3]);              // prints undefined
 

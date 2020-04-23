@@ -9,12 +9,12 @@ console.log(typeof mystr_1);               // prints string
 
 
 // 2- concat()
-const str1 = ' Sdet';
-console.log(mystr.concat(str1) );       // prints Yo World Sdet
+const str1 = ' Sdet'; 
+console.log(mystr.concat(str1) );                    // prints Yo World Sdet
 
 const str2 = ' teaches';
-console.log(mystr.concat(str1).concat(str2) );          // prints Yo World Sdet teaches
-
+console.log(mystr.concat(str1).concat(str2) );          // prints Yo World Sdet teaches (Pavan way)
+// console.log(mystr.concat(str1, str2) );                 // also prints Yo World Sdet teaches (Raghav-Pal way)
 
 // 3- replace()
 const str3 = 'typescript practice',
@@ -60,3 +60,7 @@ console.log(mystr.startsWith('Ton') );              // prints
 
 console.log(mystr.endsWith('3!') );              // prints 
 console.log(mystr.endsWith('!!') );              // prints 
+ 
+
+
+
