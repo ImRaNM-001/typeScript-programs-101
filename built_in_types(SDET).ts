@@ -22,7 +22,9 @@ console.log(result);                    // prints true
 
 // 4. void type (used as a return type fn() where no values are returned, variable of void type is not much useful as we can only assign undefined or null to it)
 const hello = () : void => console.log('bang bang');    
-hello();                        // hello is a fn() which when called prints bang bang
+
+// calling hello() fn
+hello();                        // prints bang bang
 
 // 5. null type
 let n1 : number = null;
@@ -44,7 +46,7 @@ val = false;
 console.log(val);               // prints false
 
 // using any in a fn()
-const f1n = ( (par1 : any, par2 : any) => par1 + par2 );
+const f1n = (par1 : any, par2 : any) : any => par1 + par2;
 
 // adding 2 numbers
 console.log(f1n(2, 4) );                        // prints 6

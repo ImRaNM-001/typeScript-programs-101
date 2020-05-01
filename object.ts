@@ -1,4 +1,4 @@
-// single object with key value pair
+// single object with key value pair (taught by Maxmillan from Academind)
 const person: {
     name : string,              
     age : number
@@ -8,8 +8,6 @@ const person: {
 };
 console.log(person);          // prints { name: 'kick', age: 40 }
 console.log(person.name);       // prints kick
-
-
 
 
 // embedded object having key as an object
@@ -39,18 +37,18 @@ console.log(car.seats.color);           // prints brown
 
 
 
-// it's JavaScript equivalent (intentionally changed object name as car1 to avoid car conflicts)
-// const car1 = {                          
-// 	make: 'volvo',
-// 	model: 's60',
-// 	price: 42000,
-// 	color: 'grey',
+/*  It's JavaScript equivalent code (intentionally changed object name as car1 to avoid car conflicts)
+const car1 = {                          
+	make: 'volvo',
+	model: 's60',
+	price: 42000,
+	color: 'grey',
 
-// 	seats: {
-// 		material: 'leather',
-// 		color: 'brown'
-// 	}
-// };
+	seats: {
+		material: 'leather',
+		color: 'brown'
+	}
+};                          */
 
 
 

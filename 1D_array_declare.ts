@@ -14,17 +14,17 @@ console.log(fruits2);               // prints [ 'Dates', 'PineApple', 'Coconut' 
 
 
 // printing number array using for-of and forEach loop
-for(const elem of nums1) console.log(elem);             // prints 1 2 3 3 (horizontal way)
-console.log('\n........');
-nums2.forEach(elem => console.log(elem) );               // prints 4 1 6 6 (horizontal way)
+for(const elem of nums1) console.log(elem);             // prints 1 2 3 3 (vertical order)
+console.log('\n=======================');
+nums2.forEach(elem => console.log(elem) );               // prints 4 1 6 6 (vertical order)
 
 
 // printing string array using for-in, for-of and forEach loop
-for(const index in fruits1) console.log(fruits1[index]);        // prints Apple Orange Melon (horizontal way) 
-console.log('\n........');
+for(const index in fruits1) console.log(fruits1[index]);        // prints Apple Orange Melon (vertical order) 
+console.log('\n=======================');
 
-for(const elem of fruits1.reverse() ) console.log(elem);             // prints Melon Orange Apple (horizontal way) 
-console.log('\n........');
+for(const elem of fruits1.reverse() ) console.log(elem);             // prints Melon Orange Apple (vertical order) 
+console.log('\n=======================');
 fruits2.forEach(elem => console.log(elem) );                    // prints Dates PineApple Coconut
 
 
