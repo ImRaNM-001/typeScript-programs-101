@@ -50,13 +50,13 @@ console.log('\n=======================');
 
 // 4- split()
 const fruits : string = 'Apple Oranges Melon';
-console.log(fruits.split(' ') );          // prints ['Apple', 'Oranges', 'Melon']
+console.log(fruits.split(' ') );          // fn() will activate where it finds first white space and prints     ['Apple', 'Oranges', 'Melon']
 console.log(fruits.split(' ', 2) );      // prints 1st 2 elements of the array in question i.e, ['Apple', 'Oranges']      
 console.log(fruits.split(' ', 1) );      // prints 1st element of the array in question i.e, ['Apple']
 
-console.log('\n=======================');
+console.log('\n=======================');       
 
-// 5- substring()
+// 5- substring(), basically does same job what .slice() fn does
 mystr = 'iron man mark 2';
 let subStr : string = mystr.substring(0, 4);   // it starts from oth index(letter i) and goes till 4th index(white space) but ignores 4th index
 console.log(subStr);                    // prints iron
@@ -70,24 +70,25 @@ console.log('\n=======================');
 console.log(mystr.toUpperCase() );          // prints IRON MAN MARK 2
 console.log(mystr.toLowerCase() );          // prints iron man mark 2
 
-console.log('\n=======================');
+console.log('\n=======================');           
 
-// 7- trim()
+// 7- trim()        
 mystr = '   Avengers_End    Game    ';
-console.log(mystr.trim() );         // this fn() will kill starting and ending spaces (not middle), prints Avengers_End    Game
+console.log(mystr.trim() );         // this fn() will kill starting and ending spaces (not middle spaces), prints Avengers_End    Game
+console.log('\n======================='); 
 
+console.log(mystr.trimRight() );        // kills right spaces, prints    Avengers_End    Game   
+console.log('\n======================='); 
 
-/* 
-console.log(mystr.trimRight() );        // kills right spaces, prints    Avengers_End    Game   (but not working due to ES6 library not updated issues till .endsWith() fns)
-console.log(mystr.trimLeft() );   
-
+console.log(mystr.trimLeft() );             // kills right spaces, prints Avengers_End    Game   
+console.log('\n======================='); 
 
 // 8- startsWith() and endsWith()
 mystr = 'Tony @ work    123!!';
-console.log(mystr.startsWith('ton') );              // prints 
-console.log(mystr.startsWith('Ton') );              // prints 
+console.log(mystr.startsWith('ton') );             // prints false
+console.log(mystr.startsWith('Ton') );             // prints true
 
-console.log(mystr.endsWith('3!') );              // prints 
-console.log(mystr.endsWith('!!') );              // prints                  */
+console.log(mystr.endsWith('3!') );              // prints false
+console.log(mystr.endsWith('!!') );              // prints true                 
  
 

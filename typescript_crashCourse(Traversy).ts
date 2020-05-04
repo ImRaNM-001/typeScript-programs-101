@@ -19,7 +19,7 @@ console.log(nu);         // prints 7.8643
 nu = 0xf00d;
 console.log(nu);     // prints 61453 
 
-// slicing a string (just like arr.slice() fn)
+// slicing a string (just like arr.slice() fn, basically does same job what .substring() fn does)
 let st : string;
 st = 'Hello';
 console.log(st.slice(0,3) );     // prints Hel   (starts from oth index and picks till 2)
