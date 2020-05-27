@@ -3,7 +3,7 @@ let w;           // here TypeScript implicitly has given any type to variable w
 
 w = 2;
 w = 'Hey';
-console.log(w);     // prints Hey
+console.log(w);                     // prints Hey
 console.log('\n===============================');
 
 // 2- creating own mixed data type
@@ -25,11 +25,12 @@ console.log('\n===============================');
 enum VeggieList {tomato, onion, potato};
 console.log(VeggieList.potato);                     // prints 2     as potato is at 2nd index
 
-enum FoodList {tomato=0, onion=1, salt=17, potato=44};
+enum FoodList {tomato = 0, onion = 1, salt = 17, potato = 44};
 console.log(FoodList.potato);                   // prints 44    because of the no assigned after = sign
 
-enum FoodList1 {tomato=0, onion, salt=1, potato=3};
+enum FoodList1 {tomato = 0, onion, salt = 1, potato = 3};
 console.log(FoodList1.salt);                    // prints 1     as salt is assigned no 1 despite being at 2nd index, it ignores index no and considers given no
+console.log(FoodList1.onion);                    // prints 1     as onion also comes under no 1 (implicitly)
 console.log('\n===============================');
 
 
@@ -63,16 +64,16 @@ class Car{
     }   
 
     // shorter way (works only on typescript playground web compiler)
-    // constructor(private _color?: string){  }  
+    // constructor(private _color ?: string){  }  
     
     // longer/usual way
-    fetchTheCarColor(){
+    fetchTheCarColor() : string{
         return this.color;
     }   
 
      // shorter way (using getter method but works only on typescript playground web compiler)
-    /* get theCarColor(){
-        return this.color;
+    /* get theCarColor():string{
+        return this._color;
     }           */
 }
 
@@ -91,7 +92,6 @@ class Car12{
     private color : string;
     protected maxSpeed : number;
     public price : number;
-
     // except above non-static variables, written nothing inside parent class including constructor
 }
 
@@ -104,12 +104,12 @@ class Honda extends Car12{
     }                       
 
     // using getter method to use and return private variable (that's the only way to access private property)
-    get carColor(){
+    get carColor() : string{
         return this.color;
     }
 
     // protected variable of parent class anyways is accessible inside child class as it becomes private inside child class
-    get carSpeed(){         
+    get carSpeed() : number{         
         return this.maxSpeed;
     }
 }                               // class closed here

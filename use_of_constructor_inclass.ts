@@ -2,7 +2,7 @@
 
     1. using constructor (mostly used, preferred way)
     2. using custom non-static methods created inside class
-    3. 3. using object variables (has to be done outside class only)            */
+    3. using object variables (has to be done outside class only)            */
 
 class Employee{
     empName : string;

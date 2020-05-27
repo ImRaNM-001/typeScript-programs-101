@@ -7,7 +7,7 @@ class Shape{
 
 class Square extends Shape{     
 
-    draw(nos: number) : number;       // we cannot implement overridden function of parent/super/base class in child/sub/dervied class
+    draw(nos: number) : number;       // we can only declare (and not implement) same fn() name of parent/super/base class in child/sub/dervied class
     draw(str : string) : string;      
 
     draw(overLoad : any) : any{
@@ -46,10 +46,5 @@ class Square extends Shape{
 }
 const sq = new Square();            
 console.log(sq.draw('luck') );                               */
-
-
-
-
-
 
 

@@ -10,8 +10,8 @@ class Add{
 
     show() : void {               // ES6 style way........ show = () : void => {    ,we can also assign any data type to show() fn as it is not returning anything (easy to know bcoz of console log statement)
         const sum : number = this.x + this.y;
-        console.log('The sum is', sum);        
+        console.log('The sum is', sum);                 
     }
 }
 const ad : Add = new Add(11, 22);
-ad.show();                                 // prints The sum is 33
+ad.show();                                 // prints The sum is 33          

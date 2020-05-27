@@ -1,8 +1,8 @@
-// single object with key value pair (taught by Maxmillan from Academind)
+// Ex 1: single object with key value pair (taught by Maximilian from Academind)
 const person: {
     name : string,              
     age : number
-} = {
+} = {              // till here we have written the object type explicitly which if not written will be inferred by typescript
     name : 'kick',
     age : 40
 };
@@ -10,7 +10,7 @@ console.log(person);          // prints { name: 'kick', age: 40 }
 console.log(person.name);       // prints kick
 
 
-// embedded object having key as an object
+// Ex 2: embedded object having key as an object (i wrote this on my own)
 const car: {
     make : string,
     model : string,
@@ -48,13 +48,18 @@ const car1 = {
 		material: 'leather',
 		color: 'brown'
 	}
-};                          */
+};                          */      
 
 
+// Ex 3: from Maximilian's typescript beginner course of 3h duration (rather follow Ex 1 which is company standard)
+const personS : object = {          
+    name : 'samrat',
+    age : 35
+};
+console.log(personS.name);            // prints samrat    (works fine in typescript playground web compiler)
 
 
-
-
+        
 
 
 
