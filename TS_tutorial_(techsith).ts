@@ -6,7 +6,7 @@ w = 'Hey';
 console.log(w);                     // prints Hey
 console.log('\n===============================');
 
-// 2- creating own mixed data type
+// 2- creating own mixed data type (Type Aliases)
 type ownMix = number | number[];
 
 let num : ownMix = 11,
@@ -21,8 +21,9 @@ console.log(num);           // prints 44.78
 console.log('\n===============================');
 
 
-// 3- elaborating "enum" data type
-enum VeggieList {tomato, onion, potato};
+// 3- elaborating "enum" data type (Uppercase 1st letter (ex: Tomato) recommended)
+enum VeggieList {tomato, onion, potato};      // recommended to use uppercase 1st letter of each element
+
 console.log(VeggieList.potato);                     // prints 2     as potato is at 2nd index
 
 enum FoodList {tomato = 0, onion = 1, salt = 17, potato = 44};
@@ -127,15 +128,6 @@ console.log('\n===============================');
 
 // public variable can be used outside class also without the need of any specific fn as it is "Public"
 console.log('The price of the honda car is', hn.price);         // prints The price of the honda car is 7890.87
-
-
-
-
-
-
-
-
-
 
 
 

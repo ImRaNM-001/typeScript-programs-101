@@ -1,8 +1,8 @@
 export {}       /* .ts programs when compiled using this line will generate .js program with following 2 lines of code............
 'use strict'; 
 exports._esModule = true;                     */
-let msg = 'coderevolution 50 mins challenge';       
-console.log(msg);                       // prints coderevolution 50 mins challenge
+let msg = 'codevolution 50 mins challenge';       
+console.log(msg);                       // prints codevolution 50 mins challenge
 
 // assigning null and undefined (which are sub types of other data types) to same types and other data types as well
 // same type assignment
@@ -37,7 +37,7 @@ console.log(Rang[7]);           // prints Green as index starts from 6 above
 let vari : any = 10;
 console.log(vari.name);     // should print undefined (as checked in online compiler) but throws error
 
-// below ones are wrong code as variable cannot be used a fn() and "number" type cannot use string method
+// below ones are wrong code as variable cannot be used as a fn() and "number" type cannot use string method
 
 vari();
 console.log(vari.toUpperCase() );          

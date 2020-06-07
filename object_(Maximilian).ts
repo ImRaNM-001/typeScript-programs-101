@@ -1,4 +1,4 @@
-// Ex 1: single object with key value pair (taught by Maximilian from Academind)
+// Ex 1: single object with key value pair (taught by Maximilian from Academind).....way1
 const person: {
     name : string,              
     age : number
@@ -8,6 +8,21 @@ const person: {
 };
 console.log(person);          // prints { name: 'kick', age: 40 }
 console.log(person.name);       // prints kick
+
+console.log('\n======================');
+
+// Ex 1: way 2 (easy way)
+type perObj = {
+    name : string,
+    age : number
+};
+
+const personA : perObj = {
+    name : 'kick',
+    age : 40
+};
+console.log(personA);            // prints { name: 'kick', age: 40 }
+console.log(personA.name);         // prints kick
 
 
 // Ex 2: embedded object having key as an object (i wrote this on my own)

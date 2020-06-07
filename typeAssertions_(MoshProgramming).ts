@@ -11,9 +11,3 @@ console.log(way1);                          // prints true
 let way2 = (msg as string).endsWith('z');
 console.log(way2);                          // prints true
 
-
-
-
-
-
-

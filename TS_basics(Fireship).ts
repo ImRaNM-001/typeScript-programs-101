@@ -8,13 +8,13 @@ lky = 'samrat_&_co';          // it will throw error as lky is already freezed a
 
 
 
-// 2- creating our custome type or mixed type
+// 2- creating our custome type or mixed type (Type Aliases)
 type style = string;                         // video creator calls this one as super redundant
 const txt : style = 'Benjo';
 console.log(txt);                                     // prints Benjo
 
-// created another union type by separating with a "pipe" operator
-type style2 = 'bold' | 'italic' | 23;
+// created another example of literal types using union type separating with a "pipe" operator
+type style2 = 'bold' | 'italic' | 23;           // implicitly means 'string' or 'number'
 
 // creating another variable named style
 let ft : style2;
@@ -35,23 +35,23 @@ console.log(power2(2, '3');                         // prints 8 which is actuall
 type myList = [number, string, boolean];
 
 // now creating an array of "myList1" type
-const arr : myList = [];                    // or, const arr : myList[] = [];       (i prefer this way)
-arr.push(1);
-arr.push('120');
-arr.push(true);                 
+const tupArr : myList = [];                    // or, const tupArr : myList[] = [];       (i prefer this way)
+tupArr.push(1);
+tupArr.push('120');
+tupArr.push(true);                 
 
-console.log(arr);	                    // prints  [1, "120", false]
+console.log(tupArr);	                    // prints  [1, "120", true]
 
 
 // again, another example where i am making tuple types optional
 type otherList = [number, string, boolean?];
 
 // now creating an array of "myList1" type
-const brr : otherList = [];                    // or, const arbrrr : otherList[] = [];       (i prefer this way)
-brr.push(1);
-brr.push('120');               
+const tupBrr : otherList = [];                    // or, const tupBrr : otherList[] = [];       (i prefer this way)
+tupBrr.push(1);
+tupBrr.push('120');               
 
-console.log(brr);                            // prints  [1, "120"]
+console.log(tupBrr);                            // prints  [1, "120"]
 
 
 // 5- understanding Generics (this code won't work, i will to refine it when i master this concept)
@@ -59,9 +59,9 @@ class Observable<T>{
     constructor(public val : T){}
 }
 
-let x : Observable<number>,
-y : Observable<Person>,
-z = new Observable(23);
+let x : Observable<number>,     // Observable has explicitly "number" type
+y : Observable<Person>,         // Observable has explicitly "Person" interface type
+z = new Observable(23);         // Observable has implicitly "number" type
 
 
 
