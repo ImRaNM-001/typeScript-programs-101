@@ -60,9 +60,9 @@ console.log(echo(299) );            // prints 299 (another way of printing......
 
 
 // 2. using "generics" in a fn() where generics extends a class
-class Person{
+class Person{       
     constructor(private _fName : string, private _lName : string){}     
-
+    
     /* below fn() is actually not required
     get fullName() : string{
         return this._fName + ' ' + this._lName;
@@ -70,7 +70,7 @@ class Person{
 }
 
 // writing a fn() with generics which extends a class:
-const echoP = <T extends Person>(par : T) : T => par,
+const echoP = <T extends Person>(par : T) : T => par,            // can be written also written as "const echoP = <T, Person>(par : T) : T => par,"
 
 // creating object for class "Person"
 p1 : Person = new Person('Armaan', 'Superstar');
