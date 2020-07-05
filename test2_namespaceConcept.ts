@@ -13,7 +13,7 @@ console.log(StudentCalc.myFunc(4000, 3) );              // prints 12000 in targe
 
 open new terminal at typescript location and give this command-->    "tsc --target es6 test2_namespaceConcept.ts --outFile namespace_finaloutput.js"
 
-Note: 1. we can write "outFile" or "OutFile", no issues will come
+Note: 1. we can write "outFile" or "OutFile" or simply "out", all work fine and no issues will come
 2. the filename should not have () in it otherwise it won't accept compilation
 3. these targets can be used:   '--target' option must be: 'es3', 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'esnext'.                             */
 

@@ -1,11 +1,13 @@
+/*========= All these are called "Named exports" ==================  */
+
 // initialize a simple variable and exporting it
-export const myVar : string = 'Hello';
+const myVar : string = 'Hello';
 
 // initialize a simple fn() and exporting it
-export const myFunc = () : void => console.log('This is my function');
+const myFunc = () : void => console.log('This is my function');
 
 // created a class and exporting it
-export class myClass{
+class myClass{
     v1 : number;
     v2 : number;
 
@@ -22,6 +24,9 @@ export class myClass{
         return this.v1 + this.v2;
     }
 }
+
+// shorter way via single 'export' as learnt from "codevolution - Typescript Tutorial - 26 - Named Exports" video............we can also write it at the beginning
+export {myVar, myFunc, myClass}
 
 // making use of above constants (i.e, calling them) in same file (will not work if exported)
 /*

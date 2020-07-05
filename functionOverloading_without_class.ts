@@ -8,6 +8,11 @@ displayEmpData : () => (string | number);                       */
 
 let disp1 = (a1 : any, a2 ?: any) : void => console.log(a1, a2);
 
+/*   tweaking disp1 fn() to exclude undefined (followed Brad Traversy video on typsecript)
+let disp1 = (a1 : any, a2 ?: any) : void =>{
+    if(a2 == undefined) return a1;     // here we are targetting value of a2 (which is undefined) not "typeof"
+    else return a1 + ' ' + a2;              */
+
 // calling the fn()     
 disp1('sallu');
 disp1(2, 'sanju');              

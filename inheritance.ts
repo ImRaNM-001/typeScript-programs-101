@@ -14,8 +14,8 @@ class Employee extends Person{
         this.empNo = empNo;
     }
 
-    // method with return type
-    empDetails() : (string | number){
+    // method with return type and also adding ""get"" keyword
+    get empDetails() : (string | number){
         return this.pName + ' ' + this.empNo;
     }
 
@@ -29,12 +29,12 @@ class Employee extends Person{
 const emp1 : Employee = new Employee('Vijay', 2346);
 
 // calling return type method with return keyword
-console.log(emp1.empDetails() );                    // prints Vijay 2346
+console.log(emp1.empDetails);                               // prints Vijay 2346
 
 console.log('\n===========================');
 
 // calling void method with console stmt
-emp1.empDetails1();                    // prints Vijay 2346
+emp1.empDetails1();                                       // prints Vijay 2346
 
 
 

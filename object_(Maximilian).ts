@@ -1,5 +1,5 @@
 // Ex 1: single object with key value pair (taught by Maximilian from Academind).....way1
-const person: {
+const person: {                 // note- colon (:) is not recognized by a JS file
     name : string,              
     age : number
 } = {              // till here we have written the object type explicitly which if not written will be inferred by typescript
