@@ -53,9 +53,9 @@ for(let index = 0;  index < toolNames.length; index++){
 // understanding split() fn more to separate a string and remove unwanted characters
 const stringFromWeb : string = '123$',
 // need : string[] = str2.split('$').splice(0, 1);     // splice here meant start from oth index and remove 1 element
-convertArr : string[] = stringFromWeb.split('$').slice(0, 1);     // sllice here meant start from oth index and take the elements till 1st index but ignore 1st index
+convertArr : string[] = stringFromWeb.split('$').slice(0, 1);     // slice here meant start from oth index and take the elements till 1st index but ignore 1st index
 
-console.log(convertArr.join(' ') );        // prints 123
+console.log(convertArr.join('') );        // means we are joining array ['123'] with delimitter no space and hence      prints 123
 
 
 

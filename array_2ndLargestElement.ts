@@ -1,6 +1,23 @@
-const iArr : number[] = [5, 4, 3, 2, 1];
+// I just converted the corresponding Java code to TS and it works like a charm:
 
-iArr.sort((a : number, b : number) => b - a);
+const getXLargest = (arr : number[], len : number, largestCount : number) : number =>{
+    arr.sort();
+    return arr[len - largestCount];
+};
 
-console.log(iArr[0]);           // prints 5 which is the largest element
-console.log(iArr[1]);           // prints 4 which is the 2nd largest element
+const arr = [55, -90, 876434, 45, 12, 11],      
+len = arr.length;
+console.log(getXLargest(arr, len, 3) );         // finding 3rd largest and prints 45
+
+
+const arr1 = [1, 2, 3, 4, 5],
+len1 = arr1.length;
+console.log(getXLargest(arr1, len1, 2) );         // finding 2nd largest and prints 4
+
+
+/*   corresponding Java code/method prepared after "Schneider Electric" interview failure.....
+
+    static int getXLargest(int[] arr, int len, int largestCount){  			
+    Arrays.sort(arr);  		       // Arrays is a Java class of java.util package which extends Object class
+    return arr[len - largestCount];	
+}               */

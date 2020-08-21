@@ -1,5 +1,4 @@
-/*  if no of parameters a fn() has to take is not known, we can make use of rest parameters which is denoted by ellipsis (3 dots) ...
-            */
+/*  if no of parameters a fn() has to take is not known, we can make use of rest parameters which is denoted by ellipsis (3 dots) ...                   */
 
 // Anonymous (or) fn expression (or) fat arrow fn accepting known parameters
 const greet1 = (greetWord : string, name : string) : string => greetWord + ' ' + name;
