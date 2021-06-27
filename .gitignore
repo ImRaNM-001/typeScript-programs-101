@@ -1,9 +1,9 @@
 # Default ignored files
 /shelf/
 workspace.xml
+.vscode
+.idea
 
-[core]
-    excludesfile = ~/.gitignore
 
 
 
