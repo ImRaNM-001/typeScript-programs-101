@@ -1,7 +1,7 @@
 // A. Single type 2D array declaration style
 const twoD_Srr : number [][] = [ [10, 20],  [3, 4], [51, 49] ];
 console.log(twoD_Srr[2]);                   // prints [51, 49]
-console.log(twoD_Srr[2] [1]);                // prints [49]
+console.log(twoD_Srr[2] [1]);                // prints [49]  
   
 console.log('\n=======================');
 
